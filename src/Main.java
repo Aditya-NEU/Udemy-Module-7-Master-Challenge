@@ -30,6 +30,20 @@ public class Main {
 
 
     public static void main(String[] args) {
-        
+
+        Hamburger hamburger= new Hamburger("Basic","white","chicken",3.56);
+        double price= hamburger.itemizedHamburger();
+        hamburger.addHamburgerAddition1("tomato",0.38);
+        hamburger.addHamburgerAddition2("carrot",0.65);
+        hamburger.addHamburgerAddition3("cheese",1.00);
+        System.out.println("Total burger price is "+hamburger.itemizedHamburger());
+
+        HealthyBurger healthyBurger= new HealthyBurger("Sausage",5.48);
+        healthyBurger.addHamburgerAddition1("Egg",5.43);
+        healthyBurger.addHamburgerAddition2("Lettuce",2.42);
+        System.out.println("Total healthy burger price is "+healthyBurger.itemizedHamburger());
+
+
+
     }
 }
